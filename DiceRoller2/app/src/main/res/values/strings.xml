@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DiceRoller</string>
+    <!--them nut-->
+    <string name="roll">Roll</string>
+</resources>
