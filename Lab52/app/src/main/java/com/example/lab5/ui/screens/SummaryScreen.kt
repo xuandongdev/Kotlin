@@ -23,6 +23,14 @@ fun TongKet(viewModel: BookingViewModel, navController: NavController){
             Button(onClick = {navController.navigate(BookingApp.DanhSachPhong.route)}) {
                 Text(text = "Tro ve danh sach phong")
             }
+            Button(onClick = {navController.navigate(BookingApp.ChiTietPhong.route)}) {
+                Text(text = "Nhap lai so luong phong")
+            }
+            Button(onClick = {viewModel.datPhong()
+                navController.navigate(BookingApp.DanhSachPhong.route
+            )}) {
+                Text(text = "Thanh toan")
+            }
         }
     }
 }

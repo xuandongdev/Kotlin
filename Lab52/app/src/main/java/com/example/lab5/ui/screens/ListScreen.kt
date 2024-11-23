@@ -36,7 +36,7 @@ fun DanhSachPhong(navController: NavController, viewModel: BookingViewModel){
                 .fillMaxWidth()
                 .clickable() {
                     viewModel.chonPhong(phong)
-                    navController.navigate("Detail/${phong.maP}") }
+                    navController.navigate(BookingApp.ChiTietPhong.route) }
             ) {
                 Row(modifier = Modifier
                     .padding(8.dp),

@@ -17,12 +17,8 @@ fun DatPhongApp(viewModel: BookingViewModel){
         composable(BookingApp.DanhSachPhong.route){
             DanhSachPhong(navController, viewModel)
         }
-        composable("Detail/{roomId}") { backStackEntry ->
-            val roomId = backStackEntry.arguments?.getString("roomId")?.toIntOrNull()
-            val selectedRoom = viewModel.sanCo.value.find { it.maP == roomId }
-            selectedRoom?.let {
-                ChiTietPhong(viewModel, navController)
-            }
+        composable(BookingApp.ChiTietPhong.route) {
+            ChiTietPhong(viewModel, navController)
         }
         composable(BookingApp.TongKetDat.route){
             TongKet(viewModel, navController)

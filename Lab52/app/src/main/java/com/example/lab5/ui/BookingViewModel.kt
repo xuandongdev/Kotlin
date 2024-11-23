@@ -11,7 +11,7 @@ class BookingViewModel: ViewModel(){
     )
 
     var daChon = mutableStateOf<Room?>(null)
-    var soLuong = mutableStateOf(1) //mac dinh dat 1p
+    var soLuong = mutableStateOf(0) //mac dinh dat 0p
     fun chonPhong(room: Room){
         daChon.value = room
     }
